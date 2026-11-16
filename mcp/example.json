@@ -1,0 +1,16 @@
+{
+  "id": "example",
+  "name": "示例 MCP 服务",
+  "description": "占位示例：演示 mcp/*.json 的格式。endpoint 不可达，仅用于验证能力源链路。",
+  "docsUrl": "https://github.com/lnzz123/jct-ai-studio-extensions",
+  "connection": {
+    "optionId": "default",
+    "local": false,
+    "target": "https://mcp.example.com/mcp",
+    "transport": "streamable-http",
+    "fields": [
+      { "key": "token", "label": "访问令牌", "secret": true, "required": true, "secretName": "EXAMPLE_MCP_TOKEN" }
+    ],
+    "auth": { "strategy": "bearer", "secretName": "EXAMPLE_MCP_TOKEN" }
+  }
+}
